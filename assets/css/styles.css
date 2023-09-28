@@ -1,0 +1,559 @@
+:root {
+  --header-height: 3rem;
+  --first-color: #fc3;
+  --first-color-dark: #FBD786;
+  --first-color-darken: #38ef7d;
+  --black-color: #333;
+
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2.5rem;
+  --normal-font-size: .938rem;
+
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 2.5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: var(--header-height) 0 0 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6b2b90; /* Customize the link color on hover */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: rgba(255, 204, 51, 0.849);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar a:hover {
+  color: #6b2b90; /* Customize the link color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    padding: 3.5rem 1.5rem 0;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+    transition: .5s;
+  }
+}
+
+.nav__close {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+}
+
+.nav__close,
+.scroll-link,
+.nav__logo,
+.nav__toggle {
+  color: var(--white-color);
+}
+
+.nav__link:hover {
+  color: var(--first-color-dark);
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.show {
+  right: 0;
+}
+
+.home {
+  background-color: var(--first-color);
+  overflow: hidden;
+}
+
+.home__container {
+  height: calc(100vh - var(--header-height));
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 1.5rem;
+}
+
+.home__img {
+  position: relative;
+  padding-top: 1.5rem;
+  justify-self: center;
+  width: 302px;
+  height: 233px;
+}
+
+.home__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home__data {
+  color: var(--white-color);
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #6b2b90;
+}
+
+.home__button {
+  display: inline-block;
+  background-color: var(--first-color-dark);
+  color: var(--white-color);
+  padding: 1.125rem 2rem;
+  border-radius: .5rem;
+}
+
+.home__button:hover {
+  background-color: var(--first-color-darken);
+}
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+
+  .home__container {
+    height: 100vh;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: 1fr;
+    row-gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__img {
+    order: 1;
+    width: 375px;
+    height: 289px;
+  }
+
+  .home__img img {
+    width: 375px;
+  }
+}
+
+.inner {
+  text-align: center;
+}
+
+.inner h1 {
+  color: black;
+  padding: 80px;
+}
+
+.kolom {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  border: 1px solid transparent;
+}
+
+.kolom img {
+  width: 100%;
+  height: auto;
+
+}
+
+.text-popular h2 {
+  text-align: center;
+}
+
+header p {
+  padding: 50px;
+  text-align: center;
+  color: #bebebe;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+/* Menu Section Styles */
+.menu {
+  background-color: #f5f5f5; /* Light background color for contrast */
+  color: #333333; /* Text color */
+  text-align: center;
+  padding: 110px 0;
+  position: relative; /* Add relative positioning to the menu section */
+  display: flex;
+  flex-direction: column;
+}
+
+.menu h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff5722;
+}
+
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+}
+
+.menu-slider {
+  display: flex;
+  transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+}
+
+.menu-item {
+  flex: 0 0 300px; /* Adjust the width as needed */
+  margin: 50px 14px;
+  padding: 23px;
+  background-color: #ffffff; /* Card background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Card shadow */
+  text-align: center;
+  position: relative; /* Add relative positioning for button placement */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+.menu-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+  transform: translateY(-5px); /* Move the card slightly up */
+}
+
+.menu-details {
+  margin-bottom: 20px;
+}
+
+.menu-price {
+  font-weight: bold; /* Make the price text bold */
+}
+
+.order-button {
+  background-color: #ff5722; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 4px; /* Adjust the bottom position */
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure button appears above menu details */
+}
+
+/* Menu Navigation Buttons */
+.menu-button {
+  background-color: #ff6f61; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content; /* Adjust the button width based on content */
+  margin: 10px auto;
+}
+
+.menu-button:hover {
+  background-color: #e8594a;
+}
+
+.menu-buttons {
+  margin-top: 20px; /* Add space between the menu items and buttons */
+}
+.prev-button {
+  left: 200px; /* Adjust the left position */
+}
+
+.next-button {
+  right: 200px; /* Adjust the right position */
+}
+
+/* Quality section container */
+.quality-container {
+  padding: 185px 30px 350px; /* Adjust the padding as needed */
+  text-align: center;
+  margin-bottom: 5px; /* Add margin at the bottom to create a gap */
+  background-color: #f9f9f9; /* Quality section background color */
+  color: #333; /* Text color */
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 36px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 85px; /* Add spacing between the title and content */
+  color: #333; /* Text color */
+}
+
+/* Quality content container */
+.quality-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  gap: 30px; /* Add spacing between content blocks */
+}
+
+/* Individual quality text blocks */
+.quality-text {
+  flex: 1; /* Equal width for each text block */
+  text-align: left; /* Left-align the text */
+}
+
+.quality-text h3 {
+  font-size: 24px; /* Subtitle font size */
+  margin-bottom: 10px; /* Add spacing between the title and description */
+  color: #fc3; /* Accent color */
+}
+
+.quality-text p {
+  font-size: 16px; /* Description font size */
+  line-height: 1.6; /* Adjust line height for readability */
+  color: #666; /* Text color */
+}
+
+/* Order section container */
+.order-container {
+  padding: 130px 30px 280px; /* Adjust the padding as needed */
+  text-align: center;
+  background-color: #f3e0c5;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 36px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 100px; /* Add spacing between the title and content */
+  color: #333; /* Text color */
+}
+
+/* Order steps container */
+.order-steps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  gap: 30px; /* Add spacing between steps */
+}
+
+/* Individual order step blocks */
+.order-step {
+  flex: 1; /* Equal width for each step block */
+  text-align: left; /* Left-align the text */
+}
+
+.order-step img {
+  width: 80px; /* Adjust the icon size as needed */
+}
+
+.order-step h3 {
+  font-size: 24px; /* Step title font size */
+  margin-top: 20px; /* Add spacing between the icon and title */
+  color: #fc3; /* Accent color */
+}
+
+.order-step p {
+  font-size: 16px; /* Step description font size */
+  line-height: 1.6; /* Adjust line height for readability */
+  color: #666; /* Text color */
+}
+
+
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+#whatsapp-icon a img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+}
+
+/* Footer container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #fc3; /* Footer background color */
+  color: #333; /* Text color */
+}
+
+/* Footer logo */
+.footer-left img {
+  max-width: 100px; /* Adjust logo width as needed */
+}
+
+/* Social media links */
+.social-media {
+  display: flex;
+  gap: 10px; /* Adjust spacing between social links */
+}
+
+.social-link {
+  font-size: 20px; /* Social media icon size */
+  color: #333; /* Icon color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.social-link:hover {
+  color: #fc3; /* Customize the hover color */
+}
+
+/* Copyright text */
+.footer-right p {
+  font-size: 14px; /* Copyright text font size */
+}
+
+@media screen and (min-width: 600px) {
+  .r-footer>* {
+    flex: 1;
+  }
+
+  .features {
+    flex-grow: 2;
+  }
+
+  .l-footer {
+    flex: 1 0px;
+  }
+
+  .r-footer {
+    flex: 2 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home__container {
+    justify-content: initial;
+    column-gap: 3.5rem;
+  }
+
+  .home__img {
+    width: 604px;
+    height: 466px;
+  }
+
+  .home__img img {
+    width: 604px;
+  }
+
+  .forum_bali {
+    padding: 55px;
+    margin: 4%;
+  }
+
+}

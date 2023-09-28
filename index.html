@@ -1,0 +1,280 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <title>Welcome to coffeecheersit</title>
+    </head>
+    <body>
+        <header class="l-header" class="header">
+            <nav class="nav bd-grid">
+                <div>
+                    <img src="logo.png" alt="Coffee Delights Logo">
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="scroll-link">Home</a></li>
+                        <li class="nav__item"><a href="#menu" class="scroll-link">Our Menu</a></li>
+                        <li class="nav__item"><a href="#quality" class="scroll-link">Our Quality</a></li>
+                        <li class="nav__item"><a href="#order" class="scroll-link">How to Order</a></li>
+                        <li class="nav__item"><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+
+        <main class="l-main">
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/img/home.png">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Welcome to<br> Coffee Delights</h1>
+                        <p class="home__description">Indulge in the rich flavors of <br> our carefully crafted coffee and delicious pastries.</p>
+                    </div>
+                </div>
+            </section>    
+        </main>
+
+        <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Explore Our Coffee Delights</h2>
+            <div class="menu-container">
+                <div class="menu-slider">
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="coffee1.jpg" alt="Coffee 1">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Specialty Brew</h3>
+                            <p>A delightful blend of single-origin beans from remote mountains.</p>
+                            <span class="menu-price">$4.99</span>
+                            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" class="order-button">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="caramel_macchiato.jpg" alt="Caramel Macchiato">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Caramel Macchiato</h3>
+                            <p>Rich espresso layered with steamed milk, topped with caramel drizzle.</p>
+                            <span class="menu-price">$5.49</span>
+                            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=Hello, I want to order Caramel Macchiato, My preferences are: [Specify preferences here]. My name is [Your Name]." target="_blank" class="order-button">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="coffee3.jpg" alt="Coffee 3">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Coffee 3</h3>
+                            <p>Description of Coffee 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <span class="menu-price">$5.49</span>
+                            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" class="order-button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-buttons">
+                <button id="prev-menu" class="menu-button prev-button">Previous</button>
+                <button id="next-menu" class="menu-button next-button">Next</button>
+            </div>
+    </section>
+
+    <!-- Our Quality Section -->
+<section id="quality" class="quality">
+    <div class="quality-container">
+        <h2 class="section-title">Uncompromising Quality Standards</h2>
+        <div class="quality-content">
+            <div class="quality-text">
+                <h3>Quality Ingredients</h3>
+                <p>We source the finest ingredients from around the world to ensure exceptional taste and freshness in every dish.</p>
+            </div>
+            <div class="quality-text">
+                <h3>Expert Craftsmanship</h3>
+                <p>Our experienced chefs and baristas are dedicated to perfecting each recipe, creating an unforgettable dining experience.</p>
+            </div>
+            <div class="quality-text">
+                <h3>Customer Satisfaction</h3>
+                <p>We are committed to your satisfaction, striving to exceed your expectations with exceptional service and quality.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- How to Order Section -->
+<section id="order" class="order">
+    <div class="order-container">
+        <h2 class="section-title">How to Order</h2>
+        <div class="order-steps">
+            <div class="order-step">
+                <img src="step1-icon.png" alt="Step 1 Icon">
+                <h3>Choose Your Favorites</h3>
+                <p>Explore our menu and select your favorite items.</p>
+            </div>
+            <div class="order-step">
+                <img src="step2-icon.png" alt="Step 2 Icon">
+                <h3>Place Your Order</h3>
+                <p>Submit your order securely through our website or mobile app.</p>
+            </div>
+            <div class="order-step">
+                <img src="step3-icon.png" alt="Step 3 Icon">
+                <h3>Track Delivery</h3>
+                <p>Monitor the status of your order in real-time as it's prepared and delivered to your doorstep.</p>
+            </div>
+        </div>
+    </div>
+</section>    
+
+        <script src="assets/js/main.js"></script>
+
+        <div id="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
+                <img src="whatsapp-icon.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="logo.png" alt="Coffee Delights Logo">
+            </div>
+            <div class="footer-right">
+                <div class="social-media">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <!-- Add more social media links as needed -->
+                </div>
+                <p>&copy; 2023 Coffee Delights. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+        <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // Adjust for the fixed header height
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+<script>
+    const menuSlider = document.querySelector('.menu-slider');
+    const prevButton = document.getElementById('prev-menu');
+    const nextButton = document.getElementById('next-menu');
+    let currentIndex = 0;
+
+    // Function to slide to the next menu items
+    function slideNext() {
+        currentIndex++;
+        if (currentIndex > 2) { // Adjust this number based on the number of menu items per slide
+            currentIndex = 2; // Limit to the number of slides
+        }
+        const translateX = -currentIndex * 340; // Adjust the width based on your menu item width
+        menuSlider.style.transform = `translateX(${translateX}px)`;
+    }
+
+    // Function to slide to the previous menu items
+    function slidePrev() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        }
+        const translateX = -currentIndex * 340; // Adjust the width based on your menu item width
+        menuSlider.style.transform = `translateX(${translateX}px)`;
+    }
+
+    // Add click event listeners to the buttons
+    nextButton.addEventListener('click', slideNext);
+    prevButton.addEventListener('click', slidePrev);
+</script>
+<script>
+    var whatsappIcon = document.getElementById("whatsapp-icon");
+    var isWhatsAppVisible = false; // Flag to track WhatsApp visibility
+
+    window.addEventListener("scroll", function () {
+        var scrollY = window.scrollY;
+        var windowHeight = window.innerHeight;
+        var documentHeight = document.documentElement.scrollHeight;
+
+        // Adjust this threshold as needed based on when you want the button to disappear
+        var scrollThreshold = documentHeight - windowHeight;
+
+        if (scrollY > 100 && scrollY < scrollThreshold) {
+            if (!isWhatsAppVisible) {
+                whatsappIcon.style.opacity = "1";
+                whatsappIcon.style.pointerEvents = "auto"; // Enable click
+                isWhatsAppVisible = true;
+            }
+        } else {
+            if (isWhatsAppVisible) {
+                whatsappIcon.style.opacity = "0";
+                whatsappIcon.style.pointerEvents = "none"; // Disable click
+                isWhatsAppVisible = false;
+            }
+        }
+    });
+</script>
+<!-- JavaScript for Testimonial Slider -->
+<script>
+    const testimonialSlider = document.querySelector('.testimonial-slider');
+    const slides = document.querySelectorAll('.testimonial-slide');
+
+    let currentIndex = 0;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSliderPosition();
+    }
+
+    function updateSliderPosition() {
+        testimonialSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    setInterval(nextSlide, 5000); // Auto-advance slides every 5 seconds
+</script>
+<script>
+    let prevScrollPos = window.pageYOffset;
+    let header = document.getElementById('header');
+
+    window.addEventListener('scroll', function () {
+        let scrollPosition = window.pageYOffset;
+
+        if (scrollPosition === 0) {
+            // At the top, hide the header
+            header.classList.add('scrolled');
+        } else {
+            // Scrolling down, show the header
+            header.classList.remove('scrolled');
+        }
+
+    prevScrollPos = scrollPosition;
+});
+</script>
+    </body>
+</html>
